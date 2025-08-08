@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+  background: linear-gradient(to right, #e3f2fd, #fce4ec);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-wrapper {
+  background: linear-gradient(to right, #42a5f5, #7e57c2);
+  padding: 0 20px;
+}
+
+.user-image-size {
+  height: 50px;
+  margin-top: 7px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-image-size:hover {
+  transform: scale(1.1);
+}
+
+.navbar-size {
+  height: 64px;
+  line-height: 64px;
+}
+
+/* Main */
+.main-body {
+  padding-top: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+#heading {
+  font-weight: 700;
+  color: #512da8;
+  margin-bottom: 20px;
+}
+
+.flow-text {
+  color: #444;
+}
+
+/* Card */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding-bottom: 10px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+/* Image */
+.materialboxed-image {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.materialboxed-image:hover {
+  transform: scale(1.05);
+}
+
+/* Button */
+.click-me-button {
+  margin-top: 30px;
+  background: linear-gradient(to right, #7b1fa2, #e91e63);
+  border-radius: 30px;
+  padding: 0 30px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.gradient-card {
+  background: linear-gradient(to right, #5c6bc0, #8e24aa);
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+
+.click-me-button:hover {
+  background: linear-gradient(to right, #e91e63, #7b1fa2);
+  transform: scale(1.05);
+}
+
+/* Footer */
+.page-footer {
+  background: linear-gradient(to right, #42a5f5, #7e57c2);
+}
+
+.page-footer h5 {
+  font-weight: 500;
+}
+
+.page-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
